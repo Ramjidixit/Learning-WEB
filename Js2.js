@@ -51,3 +51,13 @@ console.log(numbers);
 
 //Combining and slicing Arrays 
 
+let first=[1,2,3];
+let second=[4,5,6];
+let combined=first.concat(second);
+console.log(combined); //[1, 2, 3, 4, 5, 6]
+let combined1=second.concat(first); 
+console.log(combined1);  // [4, 5, 6, 1, 2, 3]
+
+//slice
+console.log(combined.slice(2,4)); // [3, 5]
+
