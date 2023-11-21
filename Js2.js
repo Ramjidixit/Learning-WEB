@@ -61,3 +61,54 @@ console.log(combined1);  // [4, 5, 6, 1, 2, 3]
 //slice
 console.log(combined.slice(2,4)); // [3, 5]
 
+//to create an copy 
+let another=[...combined] //this is called spread operator
+console.log(another)
+
+//Iterating an Array 
+      //using for loop 
+let arr=[10,20,30,40,50];
+for(let value of arr){
+    console.log(value);
+}
+
+//using for each loop
+arr.forEach(function(number){
+    console.log(number)
+});
+
+//Joining of an array 
+let numbers1=[10,20,30,40,50];
+const joined=numbers1.join(',');
+console.log(joined);   //10,20,30,40,50
+
+//splitting 
+let message='This is my first javascript class';
+let parts=message.split(' ');
+console.log(parts);
+
+//sorting Arrays--convert into string 
+ let number2=[40,60,30,70,25,15];
+ number2.sort();
+ console.log(number2)
+
+//Filtering Arrays --to filter out data 
+let number3=[1,2,-1,-4,5,9,-6];
+let filtered=number3.filter(function(value){
+    return value >=0;
+});
+console.log(filtered); //[1, 2, 5, 9]
+
+//same code using arrow function method 
+let filtered1=number3.filter(value => value >=0);
+console.log(filtered1) //[1, 2, 5, 9]
+
+//Mapping Arrays -map each elememnt of array to something else 
+let arra=[7,8,9,10];
+let items=arra.map(function(value){
+    return 'student_no'+value; 
+}
+)
+console.log(items); //['student_no7', 'student_no8', 'student_no9', 'student_no10']
+
+//Mapping with objects 
